@@ -1,7 +1,7 @@
 CPP = c++
 CPP_FLAGS = -Wall -Wextra -Werror -std=c++98
-TARGET = zombie
-SRCS = tests.cpp Account.cpp
+TARGET = Moar_brainz
+SRCS = main.cpp zombieHorde.cpp Zombie.cpp
 OBJS = $(SRCS:.cpp=.o)
 
 all: $(TARGET)
@@ -15,8 +15,11 @@ clean:
 	@rm -rf $(OBJS)
 
 fclean: clean
-	@rm -rf $(NAME)
+	@rm -rf $(TARGET)
 
 re: fclean all
+
+checkleaks:
+	valgrind --leak-check=yes ./$(TARGET)
 
 .PHONY: all show clean fclean re

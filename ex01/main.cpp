@@ -6,22 +6,27 @@
 /*   By: rlobun <rlobun@student.42madrid.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/16 17:50:16 by rlobun            #+#    #+#             */
-/*   Updated: 2026/03/16 17:54:11 by rlobun           ###   ########.fr       */
+/*   Updated: 2026/03/17 18:07:11 by rlobun           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Zombie.hpp"
 
 int main (void) {
-	const int NUM = 5;
-	Zombie* zombie = zombieHorde(N, "zombie");
+	const int NUM_OF_ZOMBIES = 5;
+	Zombie* zombies;
 
-	int i = 0;
-	while (i < N) {
-		zombie[i++].announce();
+	zombies	= zombieHorde(NUM_OF_ZOMBIES, "Horde");
+
+	if (!zombies)
+		return (1);
+	for (int i = 0; i < NUM_OF_ZOMBIES; i++) {
+		std::cout << "Index " << i + 1 << ": ";
+		zombies[i].announce();
 	}
-	
-	delete[] zombie;
+
+	delete[] zombies;
+
 	return (0);
 
 }
