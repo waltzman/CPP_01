@@ -3,8 +3,7 @@ CPP_FLAGS = -Wall -Wextra -Werror -std=c++98 -g
 TARGET = brainzzz
 SRCS = 	main.cpp\
 		Zombie.cpp\
-		newZombie.cpp\
-		randomChump.cpp\
+		functions.cpp\
 
 OBJS = $(SRCS:.cpp=.o)
 
@@ -23,7 +22,7 @@ fclean: clean
 
 re: fclean all
 
-leak:
+checkleaks:
 	valgrind --leak-check=yes ./$(TARGET)
 
 .PHONY: all show clean fclean re
