@@ -15,7 +15,10 @@ clean:
 	@rm -rf $(OBJS)
 
 fclean: clean
-	@rm -rf $(NAME)
+	@rm -rf $(TARGET)
+
+checkleaks:
+	valgrind --leak-check=yes ./$(TARGET)
 
 re: fclean all
 

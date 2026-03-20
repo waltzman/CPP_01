@@ -1,7 +1,11 @@
 CPP = c++
 CPP_FLAGS = -Wall -Wextra -Werror -std=c++98
-TARGET = bank_account
-SRCS = tests.cpp Account.cpp
+TARGET = violence
+SRCS =	HumanA.cpp \
+		HumanB.cpp \
+		Weapon.cpp \
+		main.cpp
+
 OBJS = $(SRCS:.cpp=.o)
 
 all: $(TARGET)
@@ -17,6 +21,9 @@ clean:
 fclean: clean
 	@rm -rf $(NAME)
 
+checkleaks:
+	valgrind --leak-check=yes ./$(TARGET)
+	§
 re: fclean all
 
 .PHONY: all show clean fclean re
