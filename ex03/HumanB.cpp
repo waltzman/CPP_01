@@ -6,15 +6,18 @@
 /*   By: rlobun <rlobun@student.42madrid.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/19 15:37:14 by rlobun            #+#    #+#             */
-/*   Updated: 2026/03/20 13:12:10 by rlobun           ###   ########.fr       */
+/*   Updated: 2026/03/20 14:07:01 by rlobun           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "HumanA.hpp"
 #include "HumanB.hpp"
 
 HumanB::HumanB(std::string name) {
 	_name = name;
+}
+
+HumanB::~HumanB(){
+	std::cout << this->_name << " is dead!" << std::endl;
 }
 
 void HumanB::attack() {
@@ -23,5 +26,5 @@ void HumanB::attack() {
 }
 
 void HumanB::setWeapon(Weapon&  weapon) {
-	_weapon = &weapon;
+	this->_weapon = &weapon;
 }

@@ -6,14 +6,15 @@
 /*   By: rlobun <rlobun@student.42madrid.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/19 16:00:52 by rlobun            #+#    #+#             */
-/*   Updated: 2026/03/20 12:53:10 by rlobun           ###   ########.fr       */
+/*   Updated: 2026/03/20 13:38:48 by rlobun           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef WEAPON_HPP
 #define WEAPON_HPP
-#include <string>
 
+#include <string>
+#include <iostream>
 class Weapon{
 	private:
 		std::string _type;
@@ -24,7 +25,7 @@ class Weapon{
 
 		// Member functions
 		void setType(std::string type);
-		const std::string& getType(void);
+		const std::string& getType(void) const;
 };
 
 #endif

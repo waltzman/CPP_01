@@ -6,7 +6,7 @@
 /*   By: rlobun <rlobun@student.42madrid.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/19 13:59:54 by rlobun            #+#    #+#             */
-/*   Updated: 2026/03/19 14:57:00 by rlobun           ###   ########.fr       */
+/*   Updated: 2026/03/20 13:38:05 by rlobun           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,6 @@
 
 #include "Weapon.hpp"
 #include <string>
-#include <iostream>
-
 
 class HumanA
 {

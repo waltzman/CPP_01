@@ -6,7 +6,7 @@
 /*   By: rlobun <rlobun@student.42madrid.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/19 15:37:50 by rlobun            #+#    #+#             */
-/*   Updated: 2026/03/20 13:09:46 by rlobun           ###   ########.fr       */
+/*   Updated: 2026/03/20 13:56:08 by rlobun           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 #define HUMANB_HPP
 
 #include "Weapon.hpp"
+#include <string>
 
 class HumanB {
 	private:
