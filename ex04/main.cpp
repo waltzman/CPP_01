@@ -6,7 +6,7 @@
 /*   By: rlobun <rlobun@student.42madrid.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/20 14:55:02 by rlobun            #+#    #+#             */
-/*   Updated: 2026/03/20 17:31:29 by rlobun           ###   ########.fr       */
+/*   Updated: 2026/03/23 08:33:04 by rlobun           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,15 +36,16 @@ int main (int argc, char **argv)
 	std::string		content;
 	if (argc != 4)
 	{
-		std::cout  << "usage: replace <file> old new" << std::endl;
+		std::cout << "Error: incorrect number of arguments" << std::endl;
+		std::cout << "Usage: <replace_file> <occurrence> <replacement>" << std::endl;
 		return (1);
 	}
 
 	std::string		inputFileName(argv[1]);
 	std::string		occurrence(argv[2]);
 	std::string		replacement(argv[3]);
-	
-	
+
+
 	if (inputFileName.size() == 0 ||
 	       occurrence.size() == 0 ||
            replacement.size() == 0) {
@@ -52,17 +53,17 @@ int main (int argc, char **argv)
 		return (1);
 	}
 
-	inputFile.open(inputFileName);
+	inputFile.open(inputFileName.c_str());
 	if (inputFile.fail()) {
-		std::cout << "Error opening file " << inputFileName << std::endl;
+		std::cout << "Error opening input file " << inputFileName << std::endl;
 		return (1);
 	}
-	 
+
 	std::string outputFileName = inputFileName.append(".replace");
-	
-	outputFile.open(outputFileName);
+
+	outputFile.open(outputFileName.c_str());
 	if (outputFile.fail()) {
-		std::cout << "Error opening file" << outputFileName << std::endl;
+		std::cout << "Error opening output file" << outputFileName << std::endl;
 		return (1);
 	}
 	// READING INPUT FILE TO STRING;
