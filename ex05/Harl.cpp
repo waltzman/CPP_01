@@ -6,7 +6,7 @@
 /*   By: rlobun <rlobun@student.42madrid.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/23 09:00:15 by rlobun            #+#    #+#             */
-/*   Updated: 2026/03/23 10:46:56 by rlobun           ###   ########.fr       */
+/*   Updated: 2026/03/23 10:50:54 by rlobun           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ Harl::~Harl() {
 
 void	Harl::_debug() {
 	std::cout	<< "DEBUG level:\n"
-				<< "I love having extrac bacon for my "
+				<< "I love having extra bacon for my "
 				<< "7XL-double-cheese-triple-pickle-special-ketchup burger.\n"
 				<< "I really do!\n";
 }
