@@ -14,16 +14,16 @@ $(TARGET): $(OBJS)
 	@$(CPP) $(CPP_FLAGS) $(OBJS) -o $(TARGET)
 
 %.o: %.cpp
-	$(CPP) $(CPP_FLAGS) -c $< -o $@
+	@$(CPP) $(CPP_FLAGS) -c $< -o $@
 clean:
 	@rm -rf $(OBJS)
 
 fclean: clean
-	@rm -rf $(NAME)
+	@rm -rf $(TARGET)
 
-checkleaks:
-	valgrind --leak-check=yes ./$(TARGET)
-	§
+checkleaks: all
+	@valgrind --leak-check=yes ./$(TARGET)
+
 re: fclean all
 
 .PHONY: all show clean fclean re

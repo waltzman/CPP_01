@@ -1,25 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Zombie.cpp                                         :+:      :+:    :+:   */
+/*   randomChump.cpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rlobun <rlobun@student.42madrid.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/03/17 17:42:49 by rlobun            #+#    #+#             */
-/*   Updated: 2026/03/23 12:41:01 by rlobun           ###   ########.fr       */
+/*   Created: 2026/03/16 16:34:56 by rlobun            #+#    #+#             */
+/*   Updated: 2026/03/23 12:21:49 by rlobun           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Zombie.hpp"
 
-Zombie::Zombie() {}
-
-Zombie::Zombie(std::string name) {
-	this -> _name = name;
-}
-
-Zombie::~Zombie() {}
-
-void Zombie::announce() {
-	std::cout << "I am: " <<this->_name << "!" << std::endl;
+void randomChump(std::string name) {
+	Zombie zombieChump(name);
+	zombieChump.announce();
 }

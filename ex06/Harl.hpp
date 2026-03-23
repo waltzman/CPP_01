@@ -6,7 +6,7 @@
 /*   By: rlobun <rlobun@student.42madrid.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/23 09:00:05 by rlobun            #+#    #+#             */
-/*   Updated: 2026/03/23 11:45:01 by rlobun           ###   ########.fr       */
+/*   Updated: 2026/03/23 13:31:08 by rlobun           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,10 +32,10 @@ class Harl {
 
 	private:
 
-		void	_debug(void);
-		void	_info(void);
-		void	_warning(void);
-		void	_error(void);
+		void	debug(void);
+		void	info(void);
+		void	warning(void);
+		void	error(void);
 		static void (Harl::*_f[4])(void);
 		static	std::string _levels[4];
 };

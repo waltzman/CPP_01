@@ -1,25 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Zombie.cpp                                         :+:      :+:    :+:   */
+/*   newZombie.cpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rlobun <rlobun@student.42madrid.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/03/17 17:42:49 by rlobun            #+#    #+#             */
-/*   Updated: 2026/03/23 12:41:01 by rlobun           ###   ########.fr       */
+/*   Created: 2026/03/16 16:34:56 by rlobun            #+#    #+#             */
+/*   Updated: 2026/03/23 12:21:43 by rlobun           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Zombie.hpp"
 
-Zombie::Zombie() {}
+Zombie *newZombie(std::string name) {
 
-Zombie::Zombie(std::string name) {
-	this -> _name = name;
-}
+	Zombie *newZombie;
 
-Zombie::~Zombie() {}
-
-void Zombie::announce() {
-	std::cout << "I am: " <<this->_name << "!" << std::endl;
+	newZombie = new Zombie(name);
+	return (newZombie);
 }

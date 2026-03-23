@@ -6,24 +6,24 @@
 /*   By: rlobun <rlobun@student.42madrid.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/19 16:05:21 by rlobun            #+#    #+#             */
-/*   Updated: 2026/03/20 13:19:17 by rlobun           ###   ########.fr       */
+/*   Updated: 2026/03/23 13:00:06 by rlobun           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Weapon.hpp"
 
-Weapon::Weapon(std::string type) {
-	_type = type;
+Weapon::Weapon(std::string type_name) {
+	type = type_name;
 }
 
 Weapon::~Weapon() {
 }
 
-void Weapon::setType(std::string type)
+void Weapon::setType(std::string type_name)
 {
-	_type = type;
+	this->type = type_name;
 }
 
 const std::string &Weapon::getType() const {
-	return (_type);
+	return (this->type);
 }

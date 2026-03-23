@@ -6,7 +6,7 @@
 /*   By: rlobun <rlobun@student.42madrid.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/23 09:00:15 by rlobun            #+#    #+#             */
-/*   Updated: 2026/03/23 10:50:54 by rlobun           ###   ########.fr       */
+/*   Updated: 2026/03/23 13:27:56 by rlobun           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,6 +51,8 @@ void	Harl::_error(void) {
 
 void	Harl::complain(std::string level) {
 		int	i = 0;
+		if (level.size() == 0)
+			return ;
 		while (i < 4) {
 			if (_levels[i] == level) {
 				(this->*_f[i])();

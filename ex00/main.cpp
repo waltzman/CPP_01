@@ -6,7 +6,7 @@
 /*   By: rlobun <rlobun@student.42madrid.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/16 12:38:34 by rlobun            #+#    #+#             */
-/*   Updated: 2026/03/16 16:28:37 by rlobun           ###   ########.fr       */
+/*   Updated: 2026/03/23 12:30:26 by rlobun           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,11 @@
 
 int main(void)
 {
-	Zombie *newZombie;
+	Zombie *z;
 
-	newZombie = new Zombie("New Zombie");
-	newZombie->announce();
+	z = newZombie("New Zombie");
+	z->announce();
 	randomChump("Random Zombie");
-	delete newZombie;
+	delete z;
 	return (0);
 }

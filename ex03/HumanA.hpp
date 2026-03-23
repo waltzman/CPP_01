@@ -6,7 +6,7 @@
 /*   By: rlobun <rlobun@student.42madrid.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/19 13:59:54 by rlobun            #+#    #+#             */
-/*   Updated: 2026/03/20 13:38:05 by rlobun           ###   ########.fr       */
+/*   Updated: 2026/03/23 13:02:01 by rlobun           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,8 @@
 class HumanA
 {
 	private:
-		std::string _name;
-		Weapon& _weapon;
+		std::string name;
+		Weapon& weapon;
 	public:
 		HumanA(std::string name, Weapon &weapon);
 		~HumanA();

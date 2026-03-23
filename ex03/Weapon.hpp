@@ -6,7 +6,7 @@
 /*   By: rlobun <rlobun@student.42madrid.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/19 16:00:52 by rlobun            #+#    #+#             */
-/*   Updated: 2026/03/20 13:38:48 by rlobun           ###   ########.fr       */
+/*   Updated: 2026/03/23 13:00:41 by rlobun           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,14 +17,14 @@
 #include <iostream>
 class Weapon{
 	private:
-		std::string _type;
+		std::string type;
 
 	public:
-		Weapon(std::string type);
+		Weapon(std::string type_name);
 		~Weapon();
 
 		// Member functions
-		void setType(std::string type);
+		void setType(std::string type_name);
 		const std::string& getType(void) const;
 };
 

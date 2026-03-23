@@ -6,7 +6,7 @@
 /*   By: rlobun <rlobun@student.42madrid.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/16 16:19:35 by rlobun            #+#    #+#             */
-/*   Updated: 2026/03/16 16:28:01 by rlobun           ###   ########.fr       */
+/*   Updated: 2026/03/23 12:32:15 by rlobun           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,16 +14,15 @@
 
 Zombie::Zombie(std::string name)
 {
-	this->_name = name;
-	std::cout << "Zombie \"" << _name << "\" created" <<std::endl;
+	this->name = name;
 }
 
 Zombie::~Zombie()
 {
-	std::cout << "Zombie \"" << _name << "\" detroyed" << std::endl;
+	std::cout << "Zombie \"" << this->name << "\" destroyed" << std::endl;
 }
 
 void  Zombie::announce(void)
 {
-	std::cout << _name << ": BraiiiiiiinnnzzzZ..." << std::endl;
+	std::cout << this->name << ": BraiiiiiiinnnzzzZ..." << std::endl;
 }

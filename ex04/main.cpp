@@ -6,7 +6,7 @@
 /*   By: rlobun <rlobun@student.42madrid.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/20 14:55:02 by rlobun            #+#    #+#             */
-/*   Updated: 2026/03/23 08:33:04 by rlobun           ###   ########.fr       */
+/*   Updated: 2026/03/23 13:24:19 by rlobun           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,7 +55,7 @@ int main (int argc, char **argv)
 
 	inputFile.open(inputFileName.c_str());
 	if (inputFile.fail()) {
-		std::cout << "Error opening input file " << inputFileName << std::endl;
+		std::cout << "Error opening input file: " << inputFileName << std::endl;
 		return (1);
 	}
 
@@ -63,7 +63,7 @@ int main (int argc, char **argv)
 
 	outputFile.open(outputFileName.c_str());
 	if (outputFile.fail()) {
-		std::cout << "Error opening output file" << outputFileName << std::endl;
+		std::cout << "Error opening output file: " << outputFileName << std::endl;
 		return (1);
 	}
 	// READING INPUT FILE TO STRING;
