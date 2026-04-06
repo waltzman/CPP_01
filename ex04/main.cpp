@@ -6,7 +6,7 @@
 /*   By: rlobun <rlobun@student.42madrid.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/06 13:24:03 by rlobun            #+#    #+#             */
-/*   Updated: 2026/04/06 13:54:37 by rlobun           ###   ########.fr       */
+/*   Updated: 2026/04/06 14:14:43 by rlobun           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,6 @@ std::string	load_data(std::ifstream &inputFile)
 		delete [] buffer;
 		return (data);
 	}
-
 
 int main (int argc, char **argv)
 {
@@ -55,7 +54,6 @@ int main (int argc, char **argv)
 		return (1);
 	}
 	
-	
 	std::string 	outputFileName = inputFileName + ".replace";
 	outputFile.open(outputFileName.c_str());
 	if (outputFile.fail()) {
@@ -63,7 +61,6 @@ int main (int argc, char **argv)
 		return (1);
 	}
 	
-
 	std::string tmp = load_data(inputFile);
 	size_t	pos = 0;
 	do	{
