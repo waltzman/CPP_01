@@ -6,7 +6,7 @@
 /*   By: rlobun <rlobun@student.42madrid.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/16 13:00:43 by rlobun            #+#    #+#             */
-/*   Updated: 2026/04/06 08:52:44 by rlobun           ###   ########.fr       */
+/*   Updated: 2026/04/06 08:56:45 by rlobun           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,8 +25,5 @@ class Zombie {
 
 		void announce(void);
 };
-
-void randomChump(std::string name);
-Zombie* newZombie(std::string name);
 
 #endif

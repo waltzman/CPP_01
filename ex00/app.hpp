@@ -6,12 +6,12 @@
 /*   By: rlobun <rlobun@student.42madrid.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/06 08:48:27 by rlobun            #+#    #+#             */
-/*   Updated: 2026/04/06 08:53:34 by rlobun           ###   ########.fr       */
+/*   Updated: 2026/04/06 08:57:22 by rlobun           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef ZOMBIE_HPP
-# define ZOMBIE_HPP
+#ifndef APP_HPP
+# define APP_HPP
 
 # include <string>
 # include <iostream>
