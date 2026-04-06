@@ -17,9 +17,6 @@ clean:
 fclean: clean
 	@rm -rf $(TARGET)
 
-valgrind:
-	valgrind --leak-check=yes ./$(TARGET)
-
 re: fclean all
 
 .PHONY: all show clean fclean re
