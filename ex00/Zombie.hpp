@@ -6,7 +6,7 @@
 /*   By: rlobun <rlobun@student.42madrid.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/16 13:00:43 by rlobun            #+#    #+#             */
-/*   Updated: 2026/03/23 12:07:15 by rlobun           ###   ########.fr       */
+/*   Updated: 2026/04/06 08:52:44 by rlobun           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 
 # include <string>
 # include <iostream>
-# include <new>
 
 class Zombie {
 	private:

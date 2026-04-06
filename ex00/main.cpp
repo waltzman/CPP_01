@@ -6,11 +6,12 @@
 /*   By: rlobun <rlobun@student.42madrid.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/16 12:38:34 by rlobun            #+#    #+#             */
-/*   Updated: 2026/03/23 12:30:26 by rlobun           ###   ########.fr       */
+/*   Updated: 2026/04/06 08:51:22 by rlobun           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Zombie.hpp"
+#include "app.hpp"
 
 int main(void)
 {

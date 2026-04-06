@@ -1,25 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   funtions.cpp                                       :+:      :+:    :+:   */
+/*   app.hpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rlobun <rlobun@student.42madrid.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/03/16 16:34:56 by rlobun            #+#    #+#             */
-/*   Updated: 2026/03/17 16:41:25 by rlobun           ###   ########.fr       */
+/*   Created: 2026/04/06 08:48:27 by rlobun            #+#    #+#             */
+/*   Updated: 2026/04/06 08:53:34 by rlobun           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#ifndef ZOMBIE_HPP
+# define ZOMBIE_HPP
+
+# include <string>
+# include <iostream>
 #include "Zombie.hpp"
 
-Zombie *newZombie(std::string name) {
+void randomChump(std::string name);
+Zombie* newZombie(std::string name);
 
-	Zombie *newZombie;
+#endif
 
-	newZombie = new Zombie(name);
-	return (newZombie);
-}
-void randomChump(std::string name) {
-	Zombie zombieChump(name);
-	zombieChump.announce();
-}
