@@ -17,7 +17,7 @@ clean:
 fclean: clean
 	@rm -rf $(TARGET)
 
-checkleaks:
+valgrind:
 	valgrind --leak-check=yes ./$(TARGET)
 
 re: fclean all
