@@ -6,7 +6,7 @@
 /*   By: rlobun <rlobun@student.42madrid.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/19 13:59:54 by rlobun            #+#    #+#             */
-/*   Updated: 2026/03/23 13:02:01 by rlobun           ###   ########.fr       */
+/*   Updated: 2026/04/06 09:21:23 by rlobun           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,10 +19,10 @@
 class HumanA
 {
 	private:
-		std::string name;
+		std::string type;
 		Weapon& weapon;
 	public:
-		HumanA(std::string name, Weapon &weapon);
+		HumanA(std::string type_str, Weapon &weapon);
 		~HumanA();
 		void attack();
 };

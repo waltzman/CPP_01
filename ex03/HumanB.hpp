@@ -6,7 +6,7 @@
 /*   By: rlobun <rlobun@student.42madrid.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/19 15:37:50 by rlobun            #+#    #+#             */
-/*   Updated: 2026/03/20 13:56:08 by rlobun           ###   ########.fr       */
+/*   Updated: 2026/04/06 09:14:47 by rlobun           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,10 +18,10 @@
 
 class HumanB {
 	private:
-		Weapon *_weapon;
-		std::string _name;
+		Weapon *weapon;
+		std::string type;
 	public:
-		HumanB(std::string name);
+		HumanB(std::string type);
 		~HumanB();
 		void attack();
 		void setWeapon(Weapon& weapon);

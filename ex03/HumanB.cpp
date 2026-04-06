@@ -6,25 +6,26 @@
 /*   By: rlobun <rlobun@student.42madrid.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/19 15:37:14 by rlobun            #+#    #+#             */
-/*   Updated: 2026/03/20 14:07:01 by rlobun           ###   ########.fr       */
+/*   Updated: 2026/04/06 09:22:42 by rlobun           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "HumanB.hpp"
 
-HumanB::HumanB(std::string name) {
-	_name = name;
+HumanB::HumanB(std::string type_str) : type(type_str) {
+	weapon = NULL;
+
 }
 
 HumanB::~HumanB(){
-	std::cout << this->_name << " is dead!" << std::endl;
+	std::cout << this-> type << " is dead!" << std::endl;
 }
 
 void HumanB::attack() {
-	if (_weapon != NULL)
-		std::cout << _name << " attacks with their " <<_weapon->getType() << std::endl;
+	if (weapon != NULL)
+		std::cout << type << " attacks with their " <<weapon->getType() << std::endl;
 }
 
 void HumanB::setWeapon(Weapon&  weapon) {
-	this->_weapon = &weapon;
+	this->weapon = &weapon;
 }
