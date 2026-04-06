@@ -6,7 +6,7 @@
 /*   By: rlobun <rlobun@student.42madrid.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/17 17:05:29 by rlobun            #+#    #+#             */
-/*   Updated: 2026/03/17 18:01:29 by rlobun           ###   ########.fr       */
+/*   Updated: 2026/04/06 08:59:39 by rlobun           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 
 class Zombie {
 	private:
-		std::string _name;
+		std::string name;
 	public:
 		Zombie();
 		Zombie(std::string name);

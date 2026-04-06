@@ -19,7 +19,7 @@ fclean: clean
 
 re: fclean all
 
-checkleaks:
-	valgrind --leak-check=yes ./$(TARGET)
+valgrind: $(TARGET)
+	valgrind --leak-check=full ./$(TARGET)
 
 .PHONY: all show clean fclean re
